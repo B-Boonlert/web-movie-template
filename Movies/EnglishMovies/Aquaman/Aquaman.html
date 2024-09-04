@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquaman</title>
+
+    <link rel="stylesheet" href="Aquaman.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="/index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Aquaman</h2>
+            <p>
+                From Warner Bros. Pictures and director James Wan comes a massive action-adventure. 
+                with shocking images that almost stop breathing In the world of the Seven Peninsulas, 
+                “Aquaman,” starring Jason Momoa, this film takes you to the origins of half-human, half-Atlantis, 
+                Arthur Curry, and takes you on an adventure. important times of life that in addition to forcing 
+                him to face his true self also for him to discover whether he is worthy of what he was born to be or not as a king....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WDkg3h8PCVU?si=2-q9AZw-X0iFexVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+
+
+
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
