@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Spider Man 2</title>
+
+    <link rel="stylesheet" href="AmazingSpiderMan2.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="/index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>AmazingSpider <span>Man2</span> </h2>
+            <p>
+                The Amazing Spider-Man 2 The life of Peter Parker (Andrew Grafield) has been busy fighting evil as Spider-Man. 
+                And spending time with the person he loves, Gwen Stacy (Emma Stone), plus his high school graduation day is too late. 
+                Peter has not forgotten the promise he made to Gwen's father. That is, she must be kept away from her so that she is not in danger. 
+                But it was a promise Peter could not keep. But things change when a new villain, Electro (Jamie Foxx), emerges and an old friend, 
+                Harry (Dane DeHaan), returns. Plus Peter discovers new clues about his past...
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nbp3Ra3Yp74?si=U8EM0tynVEpr3RrS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+
+
+
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
