@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Padmavat.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padmavat</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="/index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Padmavat</span></h2>
+            <p>
+                This fictional story is set in 13th century medieval India. a Princess of 
+                Sinhala(modern-day Sri Lanka) called Padmavati falls in love with an already married 
+                Maharawal Ratan Singh, King of Chittor. Upon their marriage, Padmavati is crowned queen, 
+                taking the place of the legal wife and queen consort of Ratan Singh and they reside together 
+                in joy and splendor. Their perfect life takes an unfortunate turn when a Court priest Chetan, 
+                banished by his king Ratan Singh, approaches Sultan of Delhi Allauddin Khilji and convinces 
+                him to attack Chittor and capture Padmavati for her beauty and absolute luck she brings to 
+                the king she marries.....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X_5_BLt76c0?si=Fs7I0fvPcejsy-yF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
