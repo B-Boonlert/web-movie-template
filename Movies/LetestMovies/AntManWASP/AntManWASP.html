@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="AntManWASP.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant-Man WASP</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="/index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Ant-Man And The Wasp</h2>
+            <p>
+                After Civil War, Scott Lang (Paul Rudd) must face the consequences of his choice to be both a superhero. 
+                and also being a father He struggles to balance his family life with his responsibilities as Ant-Man. 
+                Then he must team up with Hope Van Dyne (Evangeline Lily) and Dr. Hank Pym (Michael Douglas) on a new emergency mission. 
+                T-Man and learn to fight again with The Wasp in the form of teamwork. in order to unravel the secrets from their past...
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/ZlNFpri-Y40?si=gsMp8yRP7y4Tn1pK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
